@@ -1,0 +1,49 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    background-color: grey; 
+    text-align: center;
+}
+
+p {
+    background-color: black;
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.intro {
+    background-color: antiquewhite;
+}
+
+/* FLEXBOX */
+
+.exercice {
+    background-color: azure;
+}
+
+.title {
+    text-align: center;
+}
+
+.cover {
+    display: flex;
+}
+
+.bloc {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+}

@@ -1,0 +1,30 @@
+body {
+    background-color: aquamarine;
+}
+
+.bloc {
+
+    margin: 15px;
+}
+
+.block {
+    display: block;
+    background-color: bisque;
+}
+
+.inline {
+    display: inline;
+    background-color: blueviolet;
+    padding-bottom: 20px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+}
+
+p {
+    background-color: bisque;
+}

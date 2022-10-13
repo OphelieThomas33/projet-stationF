@@ -1,0 +1,57 @@
+/* START : stylisation du header */
+
+.header {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 125px;
+    height: 25px;
+}
+
+.list-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+/* à la place de .button on peut aussi utiliser "le dernier élément de .nav-link"
+.nav-link:last-child a {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+} 
+
+il existe aussi 
+.nav-link:first-child  : premier enfant de nav-link;
+.nav-link:nth-child(2) : enfant n°2 de nav-link;
+
+*/
+
+/* START : stylisation de la cover */
+
+.cover {
+    display: flex;
+}
+
+.img-office {
+    width: 55%;
+    flex-shrink: 0;
+}

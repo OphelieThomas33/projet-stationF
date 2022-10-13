@@ -1,0 +1,26 @@
+body {
+    background-color: aquamarine;
+}
+
+.container {
+    background-color: antiquewhite;
+    display: flex;
+    height: 500px;
+    flex-direction : row;
+    flex-wrap: wrap;
+    gap: 10px; /* espacement entre les blocs */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    padding: 10px;
+    order: 0;
+}
+
+.four {
+    order: -1;
+}
