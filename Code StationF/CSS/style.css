@@ -1,34 +1,80 @@
+/* reset : réinitialisation des styles par défauts des navigateurs */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style général */
+
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
+.flux {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+@media (max-width: 500px) {
+    .flux {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.flux-small {
+
+}
+
+.flux-medium {
+
+}
+
 /* START : stylisation du header */
 
 .header {
-    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .logo {
     width: 125px;
     height: 25px;
+    margin: 25px;
 }
 
 .list-links {
     display: flex;
     align-items: center;
-    list-style: none;
-    column-gap: 20px;
+    column-gap: 40px;
 }
 
 .nav-link {
     text-transform: uppercase;
+    font-size: 14px;   
 }
 
 
 .button {
     background-color: black;
     color: white;
-    padding: 10px 15px;
-    border-radius: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 500;
 }
 
 /* à la place de .button on peut aussi utiliser "le dernier élément de .nav-link"
@@ -49,9 +95,46 @@ il existe aussi
 
 .cover {
     display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .cover {
+        flex-direction: column;
+    }
+}
+
+.cover-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.cover-text {
+    padding-right: 100px;
+}
+
+.cover-intro {
+    margin-bottom: 30px;
 }
 
 .img-office {
     width: 55%;
     flex-shrink: 0;
+    height: 320px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.icon-scroll {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon-scroll img {
+    width: 100%;
 }
