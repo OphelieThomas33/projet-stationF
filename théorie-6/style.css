@@ -1,0 +1,45 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* gérer la fluidité des animations 
+    transition: [quelle(s) propriété(s) CSS] [durée] [style de déplacement] [delai avant lancement];*/
+    transition: 
+        background-color 0.5s linear,
+        width 0.5s linear,
+        height 0.5s linear,
+        transform 0.5s linear;
+
+    /* autre façon d'écrire le code du dessus 
+    transition: all 2s linear; */
+
+    /* bon timing : 0.25s ou 0.5s */
+}
+
+.square:hover {
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+    transform: rotate(180deg);
+    transition: all 3s linear;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* quand je survole le carré, le p change */
+.square:hover p {
+    color: lightseagreen;
+}
+
+/* quand je survole le p, le p change */
+.square p:hover {
+    color: lightcoral;
+}
+
