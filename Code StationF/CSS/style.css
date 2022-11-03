@@ -44,6 +44,13 @@ html {
     line-height: 1.25;
 }
 
+.title-3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.50;
+    font-weight: lighter;
+}
+
 .text-paragraph {
     line-height: 1.25;
 }
@@ -390,4 +397,111 @@ il existe aussi
     }
 }
 
-/* END online */
+/* START : stylisation de startup */
+
+.startup {
+    padding: 70px 0px;
+}
+
+.startup-content {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    padding-top: 25px; 
+}
+
+@media (min-width: 1200px) {
+    .startup-content {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.startup-content .startup-card .title-3 {
+    max-width: 240px; 
+}
+
+.startup-content .startup-card img {
+    width: 240px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+    .startup-content .startup-card {
+       width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .startup-content .startup-card img {
+       width: 100%;
+       height: 40%
+    }
+}
+
+/* START : stylisation de news */
+
+.news-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.news-title .title-2,
+.news-title .button {
+    margin: 0;
+}
+
+.news-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 640px) {
+    .news-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.news-content .news-card {
+    width: 100%;
+    border-radius: 15px;
+    background: #202020;
+    color: white; 
+}
+
+.news-content .news-card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.news-content .news-card .news-text {
+    padding: 15px 20px;
+}
+
+@media (min-width: 1024px) {
+    .news-card-1 {
+        grid-row: 1/3;
+    }
+    .news-card img {
+        flex-grow: 1;
+        object-fit: cover;
+    }
+    .news-card-2 {
+        grid-row: 1/1;
+        grid-column: 2/4;
+    }
+    .news-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .news-content {
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: 50% 50%;
+    }
+}
