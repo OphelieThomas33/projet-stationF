@@ -311,19 +311,25 @@ il existe aussi
     }
 }
 
-.online .online-content img {
+.online .online-content .online-img {
     width: 50%;
-    object-fit: contain;
+    border-radius: 20px;
     margin-right: 50px;
-    border-radius: 15px;
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 640px) {
-    .online img {
+    .online .online-content .online-img {
         width: 100%;
         padding-right: 0;
         display: none;
     }
+}
+
+.online .online-content .online-img img {
+    border-radius: 10px;
+    width: 100%;
 }
 
 .online .container-texts {
