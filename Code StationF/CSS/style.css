@@ -133,7 +133,7 @@ html {
     cursor: pointer;
 }
 
-.button {
+.button-nav {
     color: white;
     padding: 15px 30px;
     border-radius: 30px;
@@ -443,6 +443,9 @@ il existe aussi
 }
 
 /* START : stylisation de news */
+.news {
+    margin-bottom: 200px;
+}
 
 .news-title {
     display: flex;
@@ -485,6 +488,10 @@ il existe aussi
 }
 
 @media (min-width: 1024px) {
+    .news-content {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+    }
     .news-card-1 {
         grid-row: 1/3;
     }
@@ -500,8 +507,81 @@ il existe aussi
         display: flex;
         flex-direction: column;
     }
-    .news-content {
-        grid-template-columns: 50% 25% 25%;
-        grid-template-rows: 50% 50%;
+}   
+
+/* START : stylisation de lodging */
+.lodging .container-text {
+    background-color: #202020;
+    padding: 100px 0px;
+}
+
+.lodging-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lodging-content {
+    color: white;
+}
+
+.lodging-content .lodging-text {
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+.lodging-content .lodging-button {
+    background-color: #ff3395;
+    border: 0;
+}
+
+.lodging .container-image {
+    background-image: linear-gradient(#202020 0% 75%, white 75% 100%);
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.lodging .container-image img {
+    width: 100%;
+}
+
+/* START : stylisation de events */
+.events-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.events-title .title-2 {
+    margin-bottom: 0;
+}
+
+.events-container-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.events-container-card .events-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.events-card  {
+    text-align: center;
+}
+
+.events-card p {
+    margin: 15px 0 10px 0;;
+}
+
+@media (max-width: 1024px) {
+    .events-container-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .events-card-3 {
+        display: none;
     }
 }
